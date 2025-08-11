@@ -7,25 +7,20 @@ body {
 
 header {
     background-color: #161616;
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 20px; /* reduced bottom space */
 }
-#topRow{
-    padding-top: 1%;
-    padding-left: 3%;
-    padding-right: 3%;
+#topRow {
+    padding: 2% 3%;
     display: flex;
     justify-content: space-between;
 }
 
 .menu>a {
     font-family: "Epilogue", sans-serif;
-    font-weight: medium;
-    font-size: 24px;
+    font-weight: 500;
+    font-size: clamp(16px, 2vw, 24px); /*valor minimo, xx, valor máximo*/
     text-decoration: none;
     color: #F0F0E9;
-    line-height: 50px;
+    line-height: 1,5rem;
 }
 
 .menu {
@@ -33,44 +28,17 @@ header {
     display: grid;
 }
 
-p {
-    font-family: "Epilogue", sans-serif;}
-
 #meuNome{
-    width: 17%;
+    /* width: 17%; */
+    min-width: 150;
     text-align: end;
     color: #F0F0E9;
 }
 
-#tituloInicial>h1{
-     position: relative;
-    top: -15vh; /*  */
-    margin: 0;
-    font-family: "IndernikGold", sans-serif;
-    font-size: clamp(2rem, 10vw, 150px);
-    color: #F0F0E9;
-    text-align: center;
-}
-
-#tituloInicial>p{
-     position: relative;
-    top: -14vh;
-    font-size: clamp(0,2rem, 10vw, 150px);
-    color: #F0F0E9;
-    text-align: center;
+#meuNome>p{
+    font-size: clamp(16px, 2vw, 24px);
     
 }
 
-#moveBar{
-     position: relative;
-    top: -13vh;
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0;
-}
-
-#moveBar>p{
-    margin: 0;
-    width: 10%;
-    color: #F0F0E9;
-}
+p {
+    font-family: "Epilogue", sans-serif;}
