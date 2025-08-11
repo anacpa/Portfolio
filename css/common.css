@@ -7,8 +7,9 @@ body {
 
 header {
     background-color: #161616;
-    width: 100%;
-    height: 70%;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 20px; /* reduced bottom space */
 }
 #topRow{
     padding-top: 1%;
@@ -57,16 +58,19 @@ p {
     font-size: clamp(0,2rem, 10vw, 150px);
     color: #F0F0E9;
     text-align: center;
+    
 }
 
 #moveBar{
      position: relative;
-    top: -7vh;
+    top: -13vh;
     display: flex;
     justify-content: space-evenly;
+    margin: 0;
 }
 
 #moveBar>p{
+    margin: 0;
     width: 10%;
     color: #F0F0E9;
 }
