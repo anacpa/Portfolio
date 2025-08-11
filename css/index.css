@@ -1,5 +1,5 @@
-
-#tituloInicial>h1{
+/* ========================================= Home page */
+#tituloInicial>h1 {
     margin: 0;
     font-family: "IndernikGold", sans-serif;
     font-size: clamp(2rem, 10vw, 150px);
@@ -7,23 +7,95 @@
     text-align: center;
 }
 
-#tituloInicial>p{
+#tituloInicial>p {
     font-size: clamp(1rem, 5vw, 16px);
     color: #F0F0E9;
     text-align: center;
 }
 
-#tituloInicial{
+#tituloInicial {
     padding-bottom: clamp(50px, 4vw, 100px);
 }
 
-#moveBar{
+#moveBar {
     display: flex;
     justify-content: space-evenly;
     margin: 0;
 }
 
-#moveBar>p{
+#moveBar>p {
     margin: 0;
     color: #F0F0E9;
+}
+
+/* ========================================= Trabalhos */
+
+/* =================== Slider */
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: mandatory;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+/* Remove barra de rolagem no Chrome/Safari */
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+/* Remove barra de rolagem no Firefox */
+.slider {
+    scrollbar-width: none;
+}
+
+.slider img {
+    flex: 0 0 auto;
+    height: 500px;
+    border-radius: 10px;
+    scroll-snap-align: center;
+    /* centraliza a foto ao parar */
+    object-fit: cover;
+}
+
+
+
+
+/* ========================================= Footer */
+/*
+<div id="contactInfo">
+            <p>Leiria & Coimbra, Portugal</p>
+            <p>anacatarinapalmeida@gmail.com</p>
+        </div>
+        <div id="icons">
+            <img src="imagens/icons/linkedin.svg">
+            <img src="imagens/icons/behance.svg">
+            <img src="imagens/icons/github.svg">
+        </div>
+    </footer>
+*/
+
+footer{
+    background-color: #161616;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 5%;
+}
+
+#contactInfo{
+    color: #F0F0E9;
+}
+#contactInfo>p{
+    margin: 10px;
+}
+#icons>img{
+    height: 40px;
+    padding: 10px;
 }

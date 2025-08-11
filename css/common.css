@@ -1,4 +1,4 @@
-
+/* ========================================= barra superior */
 
 body {
     background-color: #F0F0E9;
@@ -8,6 +8,7 @@ body {
 header {
     background-color: #161616;
 }
+
 #topRow {
     padding: 2% 3%;
     display: flex;
@@ -17,10 +18,11 @@ header {
 .menu>a {
     font-family: "Epilogue", sans-serif;
     font-weight: 500;
-    font-size: clamp(16px, 2vw, 24px); /*valor minimo, xx, valor máximo*/
+    font-size: clamp(16px, 2vw, 24px);
+    /*valor minimo, xx, valor máximo*/
     text-decoration: none;
     color: #F0F0E9;
-    line-height: 1,5rem;
+    line-height: 1, 5rem;
 }
 
 .menu {
@@ -28,17 +30,28 @@ header {
     display: grid;
 }
 
-#meuNome{
+#meuNome {
     /* width: 17%; */
     min-width: 150;
     text-align: end;
     color: #F0F0E9;
 }
 
-#meuNome>p{
+#meuNome>p {
     font-size: clamp(16px, 2vw, 24px);
-    
+
 }
 
 p {
-    font-family: "Epilogue", sans-serif;}
+    font-family: "Epilogue", sans-serif;
+}
+
+
+/* ========================================= @Design e multimedia */
+
+#topDM {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
