@@ -1,3 +1,14 @@
+header {
+    background-color: #161616;
+}
+
+.menu>a {
+    color: #F0F0E9;
+}
+
+#meuNome {
+    color: #F0F0E9;
+}
 /* ========================================= Home page */
 #tituloInicial>h1 {
     margin: 0;

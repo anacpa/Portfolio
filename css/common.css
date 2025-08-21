@@ -10,9 +10,6 @@ body {
     margin: 0;
 }
 
-header {
-    background-color: #161616;
-}
 
 #topRow {
     padding: 2% 3%;
@@ -26,7 +23,6 @@ header {
     font-size: clamp(16px, 2vw, 24px);
     /*valor minimo, xx, valor máximo*/
     text-decoration: none;
-    color: #F0F0E9;
     line-height: 1, 5rem;
 }
 
@@ -39,7 +35,6 @@ header {
     /* width: 17%; */
     min-width: 150;
     text-align: end;
-    color: #F0F0E9;
 }
 
 #meuNome>p {
