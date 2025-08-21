@@ -62,28 +62,46 @@
     object-fit: cover;
 }
 
+/* =================== Titulo */
 
 
-
-/* ========================================= Footer */
-
-footer{
-    background-color: #161616;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 5%;
-    padding-right: 5%;
-    margin-top: 5%;
+.titulo-bloco {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 30px 5% 10px; /* espaço em relação ao slider */
 }
 
-#contactInfo{
-    color: #F0F0E9;
+.titulo-bloco svg {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  color: #333; /* podes mudar a cor */
 }
-#contactInfo>p{
-    margin: 10px;
+
+.titulo-bloco h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
-#icons>img{
-    height: 40px;
-    padding: 10px;
+
+.titulo-bloco .subtitulo {
+  margin: 0;
+  font-size: 1rem;
+  color: #777;
 }
+
+
+/* =================== Conteudo */
+
+
+/* Conteúdo em grid (templates já usam classes tipo grid-cols-2 ou 3) */
+.grid {
+  margin: 20px 5%;
+  display: grid;
+  gap: 20px;
+}
+
+
+
+

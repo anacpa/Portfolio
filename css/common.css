@@ -55,3 +55,25 @@ p {
     text-align: center;
 }
 
+/* ========================================= Footer */
+
+footer{
+    background-color: #161616;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 5%;
+}
+
+#contactInfo{
+    color: #F0F0E9;
+}
+#contactInfo>p{
+    margin: 10px;
+}
+#icons>img{
+    height: 40px;
+    padding: 10px;
+}
