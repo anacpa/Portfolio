@@ -41,14 +41,14 @@
 
     <main>
         <!--  <section id="sideArrow"></section> -->
-          <section id="topDM">
+        <section id="topDM">
             <p>@Design and Multimedia<br>2025</p>
-          </section>
+        </section>
 
-          <section>
-            <div id="nomeTrabalho"></div>
+        <section>
+            <div id="tituloProjeto"></div>
             <div class="slider">
-                <img src="imagens/ccdm.png" alt="foto 1">
+                <img src="imagens/ccdm.png" alt="foto 1" data-titulo="#titulo-ccdm" data-conteudo="#conteudo-ccdm">
                 <img src="imagens/refresko.png" alt="foto 2">
                 <img src="imagens/magazine.png" alt="foto 3">
                 <img src="imagens/branding.png" alt="foto 4">
@@ -57,7 +57,39 @@
                 <img src="imagens/myportfolio.png" alt="foto 7">
                 <img src="imagens/nowwhat.png" alt="foto 8">
             </div>
-          </section>
+            <div id="conteudoProjeto"></div>
+        </section>
+
+        <!-- Templates de títulos -->
+        <template id="titulo-ccdm">
+            <div class="titulo-bloco">
+                <svg width="30" height="30" fill="currentColor" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10" />
+                </svg>
+                <div>
+                    <h2>Projeto CCDM</h2>
+                    <p class="subtitulo">Identidade Visual</p>
+                </div>
+            </div>
+        </template>
+
+        <!-- Templates de conteúdos -->
+        <template id="conteudo-ccdm">
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <p>Identidade visual desenvolvida para o Centro Cultural DM.</p>
+                    <p>Inclui logotipo, manual de marca e material gráfico.</p>
+                </div>
+                <div>
+                    <ul>
+                        <li>Paleta de cores</li>
+                        <li>Tipografia</li>
+                        <li>Aplicações</li>
+                    </ul>
+                </div>
+            </div>
+        </template>
+
     </main>
 
     <footer>
@@ -72,6 +104,7 @@
         </div>
     </footer>
 
+    <script src="slider.js"></script>
 </body>
 
 </html>

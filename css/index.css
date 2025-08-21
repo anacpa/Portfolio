@@ -35,7 +35,7 @@
 .slider {
     display: flex;
     overflow-x: auto;
-    scroll-snap-type: mandatory;
+    scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     gap: 20px;
     padding-left: 5%;
@@ -66,18 +66,6 @@
 
 
 /* ========================================= Footer */
-/*
-<div id="contactInfo">
-            <p>Leiria & Coimbra, Portugal</p>
-            <p>anacatarinapalmeida@gmail.com</p>
-        </div>
-        <div id="icons">
-            <img src="imagens/icons/linkedin.svg">
-            <img src="imagens/icons/behance.svg">
-            <img src="imagens/icons/github.svg">
-        </div>
-    </footer>
-*/
 
 footer{
     background-color: #161616;
