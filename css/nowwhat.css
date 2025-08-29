@@ -13,6 +13,8 @@
     grid-template-columns: repeat(5, 20%);
     grid-template-rows: repeat(6, 16.66%);
     gap: 10px;
+    overflow: hidden;
+    /* Prevent horizontal scrolling */
 }
 
 /* =================== imagens */
@@ -26,10 +28,11 @@
 
 
 #inicio>.imagem:nth-child(1) {
-    grid-column: 2 / 4; /* ocupa colunas 2 e 3 */
-    grid-row: 1 / 3; /* ocupa linhas 1 e 2 */
+    grid-column: 2 / 4;
+    /* ocupa colunas 2 e 3 */
+    grid-row: 1 / 3;
+    /* ocupa linhas 1 e 2 */
     position: relative;
-    top: -10%;
 }
 
 #inicio>.imagem:nth-child(2) {
@@ -37,25 +40,77 @@
     grid-row: 2 / 4;
     position: relative;
     left: -25%;
+    top: -10%;
+}
+
+#inicio>.imagem:nth-child(2)>img {
+    width: 75%;
 }
 
 #inicio>.imagem:nth-child(3) {
     grid-column: 5;
     grid-row: 3 / 5;
-    width: 180%;
+    width: 100%;
+    max-width: 100%;
     position: relative;
     top: -40%;
 }
 
 #inicio>.imagem:nth-child(4) {
+    /* grid-column: 5;
+    grid-row: 4 / 5;
+    width: 100%;
+    max-width: 100%;
+    position: relative;*/
+    display: none;
+}
+
+#inicio>.imagem:nth-child(5){
+    grid-row: 4;
     grid-column: 5;
-    grid-row: 4 / 6;
-    width: 180%;
-    position: relative;
-    top: 80%;
-    right: 20%;
+}
+
+/* Ensure images don't overflow their containers */
+.imagem img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 /* =================== texto inicial */
+#texto {
+    padding-top: 10%;
+    grid-row: 1;
+    grid-column: 4;
+}
+
+#texto h1 {
+    font-family: Epilogue;
+    font-size: 64px;
+    font-weight: 800;
+    margin-bottom: 5%;
+}
+
 /* =================== cores */
+#inicio #bege {
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inicio #azul-claro,
+#inicio #azul-escuro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bege img,
+#azul-claro img,
+#azul-escuro img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* =================== tipografia */
