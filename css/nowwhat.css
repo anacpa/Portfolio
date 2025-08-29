@@ -11,7 +11,7 @@
 #inicio {
     display: grid;
     grid-template-columns: repeat(5, 20%);
-    grid-template-rows: repeat(6, 16.66%);
+    grid-template-rows: repeat(5, 16.66%);
     gap: 10px;
     overflow: hidden;
     /* Prevent horizontal scrolling */
@@ -94,23 +94,44 @@
 /* =================== cores */
 #inicio #bege {
     grid-column: 2 / 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-#inicio #azul-claro,
-#inicio #azul-escuro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#inicio #bege span{
+    font-weight: 600;
 }
-
-#bege img,
-#azul-claro img,
-#azul-escuro img {
-    max-width: 100%;
-    height: auto;
+#inicio #azul-claro span{
+    font-weight: 600;
+}
+#inicio #azul-escuro span{
+    font-weight: 600;
 }
 
 /* =================== tipografia */
+#inicio #outfit{
+    grid-column: 2 / 3;
+    width: 75%;
+}
+#JetBrains_Mono, #Kanit{
+    width: 75%;
+}
+/* ====== */
+#inicio #outfit p{
+    font-family: Outfit;
+}
+#inicio #outfit p:nth-child(1){
+    font-weight: 600;
+}
+/* ====== */
+#inicio #JetBrains_Mono p{
+    font-family: "JetBrains Mono";
+}
+#inicio #JetBrains_Mono p:nth-child(1){
+    font-weight: 600;
+}
+/* ====== */
+#inicio #Kanit p{
+    font-family: Kanit;
+}
+#inicio #Kanit p:nth-child(1){
+    font-weight: 600;
+}
