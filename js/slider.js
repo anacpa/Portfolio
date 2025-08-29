@@ -40,7 +40,9 @@ function atualizar(img) {
 
 const centrado = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
+        console.log('IntersectionObserver entry:', entry.target.alt, 'isIntersecting:', entry.isIntersecting, 'ratio:', entry.intersectionRatio);
         if (entry.isIntersecting && entry.intersectionRatio > 0.8) {
+            console.log('Updating content for:', entry.target.alt);
             atualizar(entry.target);
         }
     });

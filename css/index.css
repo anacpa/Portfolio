@@ -76,18 +76,29 @@ header {
 /* =================== Titulo */
 
 
-.titulo-bloco {
+#tituloProjeto {
   display: flex;
   align-items: center;
   gap: 15px;
   margin: 30px 5% 10px; /* espaço em relação ao slider */
 }
 
-.titulo-bloco svg {
-  width: 40px;
-  height: 40px;
-  flex-shrink: 0;
-  color: #333; /* podes mudar a cor */
+#tituloProjeto img {
+  width: 5%;
+}
+
+#tituloProjeto > div > p{
+    margin: 0;
+}
+
+#tituloProjeto .subtitulo{
+    font-size: 1rem;
+    margin-bottom: 3%;
+}
+
+#tituloProjeto .titulo{
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .titulo-bloco h2 {
@@ -97,24 +108,25 @@ header {
   color: #161616;
 }
 
-.titulo-bloco .subtitulo {
-  margin: 0;
-  font-size: 1rem;
-  color:#161616;
-}
 
 
 /* =================== Conteudo */
 
-
-/* Conteúdo em grid (templates já usam classes tipo grid-cols-2 ou 3) */
-.grid {
-  margin: 20px 5%;
-  display: grid;
-  gap: 20px;
-  color: #161616;
+#conteudoProjeto{
+    margin: 30px 5% 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    gap: 20px;
 }
 
+#conteudoProjeto> div>p{
+    font-weight: bold;
+}
 
-
-
+#conteudoProjeto> div> ul{
+    list-style:none;
+    padding-left: 0;
+}
+#conteudoProjeto> div> ul > li{
+    font-family: "Epilogue", sans-serif;
+}
