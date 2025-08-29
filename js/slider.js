@@ -11,14 +11,25 @@ const imagens = document.querySelectorAll(".slider img");
 
 function atualizar(img) {
     // atualizar titulo
-    const tituloTemplate = document.querySelector(img.dataset.titulo);
-    titulo.innerHTML = "";
-    titulo.appendChild(tituloTemplate.content.cloneNode(true));
+    if (img.dataset.titulo) {
+        const tituloTemplate = document.querySelector(img.dataset.titulo);
+        if (tituloTemplate) {
+            titulo.innerHTML = "";
+            titulo.appendChild(tituloTemplate.content.cloneNode(true));
+        }
+    }
 
     // atualizar conteudo
-    const conteudoTemplate = document.querySelector(img.dataset.conteudo);
-    conteudo.innerHTML = "";
-    conteudo.appendChild(conteudoTemplate.content.cloneNode(true));
+    if (img.dataset.conteudo) {
+        const conteudoTemplate = document.querySelector(img.dataset.conteudo);
+        if (conteudoTemplate) {
+            conteudo.innerHTML = "";
+            conteudo.appendChild(conteudoTemplate.content.cloneNode(true));
+        }
+    } else {
+        // Clear content if no data-conteudo attribute
+        conteudo.innerHTML = "";
+    }
 }
 
 
@@ -41,9 +52,9 @@ const centrado = new IntersectionObserver((entries) => {
 
 
 //observa todas as imagens 
-imagens.forEach(img => observer.observe(img));
+imagens.forEach(img => centrado.observe(img));
 
 // mostrar automaticamente o 1 projeto quando carrega pag
 if (imagens[0]) {
-  atualizarTrabalho(imagens[0]);
+  atualizar(imagens[0]);
 }
