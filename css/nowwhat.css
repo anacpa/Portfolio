@@ -66,8 +66,12 @@
 }
 
 #inicio>.imagem:nth-child(5){
-    grid-row: 4;
+    grid-row: 5;
     grid-column: 5;
+    width: 200%;
+    position: relative;
+    bottom: -150px;
+    right: 200px;
 }
 
 /* Ensure images don't overflow their containers */
@@ -134,4 +138,29 @@
 }
 #inicio #Kanit p:nth-child(1){
     font-weight: 600;
+}
+
+
+/* ========================================= imagens 1 */
+#imagens1{
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+
+#imagens1 img{
+    width: 50%;
+    height: 50%;
+}
+
+#imagens1 img:last-child{
+    width: 30%;
+    padding-top: 5%;
+}
+
+/* ========================================= tshirts */
+#tshirts img{
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
