@@ -12,121 +12,28 @@ header {
 /* ========================================= Home page */
 #tituloInicial>h1 {
     margin: 0;
-    font-family: "IndernikGold", sans-serif;
-    font-size: clamp(2rem, 10vw, 150px);
+  /*  font-family: "IndernikGold", sans-serif;
+    font-size: clamp(2rem, 10vw, 150px); */
     color: #F0F0E9;
-    text-align: center;
 }
 
 #tituloInicial>p {
     font-size: clamp(1rem, 5vw, 16px);
     color: #F0F0E9;
-    text-align: center;
 }
 
 #tituloInicial {
     padding-bottom: clamp(50px, 4vw, 100px);
 }
 
-#moveBar {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0;
-}
+/* ========================================= imagens */
 
-#moveBar>p {
-    margin: 0;
-    color: #F0F0E9;
-}
 
 /* ========================================= Trabalhos */
 
-/* =================== Slider */
-
-.slider {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    gap: 20px;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-
-/* Remove barra de rolagem no Chrome/Safari */
-.slider::-webkit-scrollbar {
-    display: none;
-}
-
-/* Remove barra de rolagem no Firefox */
-.slider {
-    scrollbar-width: none;
-}
-
-.slider img {
-    flex: 0 0 auto;
-    height: 500px;
-    border-radius: 10px;
-    scroll-snap-align: center;
-    /* centraliza a foto ao parar */
-    object-fit: cover;
-}
-
 /* =================== Titulo */
-
-
-#tituloProjeto {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin: 30px 5% 10px; /* espaço em relação ao slider */
-}
-
-#tituloProjeto img {
-  width: 5%;
-}
-
-#tituloProjeto > div > p{
-    margin: 0;
-}
-
-#tituloProjeto .subtitulo{
-    font-size: 1rem;
-    margin-bottom: 3%;
-}
-
-#tituloProjeto .titulo{
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.titulo-bloco h2 {
-  margin: 0;
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #161616;
-}
 
 
 
 /* =================== Conteudo */
 
-#conteudoProjeto{
-    margin: 30px 5% 10px;
-    display: grid;
-    grid-template-columns: repeat(5, 20%);
-    gap: 20px;
-}
-
-#conteudoProjeto> div>p{
-    font-weight: bold;
-}
-
-#conteudoProjeto> div> ul{
-    list-style:none;
-    padding-left: 0;
-}
-#conteudoProjeto> div> ul > li{
-    font-family: "Epilogue", sans-serif;
-}
