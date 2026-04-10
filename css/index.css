@@ -12,8 +12,7 @@ header {
 /* ========================================= Home page */
 #tituloInicial>h1 {
     margin: 0;
-  /*  font-family: "IndernikGold", sans-serif;
-    font-size: clamp(2rem, 10vw, 150px); */
+   font-family: "Epilogue", sans-serif;
     color: #F0F0E9;
 }
 
@@ -26,12 +25,42 @@ header {
     padding-bottom: clamp(50px, 4vw, 100px);
 }
 
+/* ========================================= typo */
+.subtitulo {
+     font-family: "Geologica", sans-serif;
+     font-weight: 300;
+}
+
+.titulo{
+    font-family: "Epilogue", sans-serif;
+     font-weight: 600;
+}
+
+.descricao-flex p{
+     font-family: "Geologica", sans-serif;
+      font-weight: 300;
+}
+
+.tags{
+     font-family: "Geologica", sans-serif;
+      font-weight: 300;
+}
+
+.data_realizacao{
+     font-family: "Geologica", sans-serif;
+       font-weight: 300;
+}
+
 /* ========================================= imagens iniciais tamanhos*/
-#ccdm img {
-    width: 25%;
+
+.img-projeto {
+    max-width: 60%;    
+    height: auto;       /* mantem proporcao */
+    object-fit: contain;
+    flex-shrink: 0;     /* impede que a imagem seja esmagada */
 }
 #ccdm_mouse img {
-    width: 5%;
+    width: 15%;
 }
 
 #typher img {
@@ -50,6 +79,7 @@ header {
 
 
 /* ========================================= grid */
+/* ============== ccdm */
 
 #grid {
     display: grid;
@@ -58,15 +88,45 @@ header {
     gap: 8px;
 }
 
+.ccdm-wrapper {
+    display: flex;
+    flex-direction: row; /* Coloca texto e imagem lado a lado */
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+}
+
+#ccdm_mouse {
+    flex: 1;
+}
+
+/* Alinha o ícone da seta com o título */
+.header-flex {
+    display: flex;
+    gap: 15px;
+   width: 600px;
+}
+
+/* A data que deve ficar por baixo da imagem */
+#dataCCDM {
+    text-align: right; /* Alinha à direita, por baixo da imagem */
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Organiza a descrição e as tags lado a lado se quiseres (opcional) */
+.descricao-flex {
+    display: flex;
+    gap: 40px;
+    /* Alinha com o início do texto, ignorando a seta */
+}
+
 #ccdm {
-   grid-column: span 4 / span 5;
-   display: flex;
-   flex-wrap: wrap;
+    grid-column: 3;
 }
-#ccdm p {
-    grid-column: span 5 / span 5;
-    grid-row-start: 2;
-}
+
+/* ============== typher */
 
 #typher {
     grid-column: span 5 / span 5;
