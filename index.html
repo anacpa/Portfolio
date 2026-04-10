@@ -27,7 +27,7 @@
         </section>
 
         <section id="tituloInicial">
-             <p>[ Design portfolio edition ]</p>
+            <p>[ Design portfolio edition ]</p>
             <h1>Multidisciplinary designer <br> Web & graphic and editorial design.</h1>
         </section>
 
@@ -39,57 +39,76 @@
             <p>@Design and Multimedia<br>2026</p>
         </section>
 
+        <!--
         <section>
             <div id="tituloProjeto"></div>
             <div class="slider">
-                <img src="imagens/ccdm.png" alt="foto 1" data-titulo="#titulo-ccdm" data-conteudo="#conteudo-ccdm">
-                <img src="imagens/typher.png" alt="foto 2" data-titulo="#titulo-typher"
-                    data-conteudo="#conteudo-magazine">
+
                 <a href="nowwhat.html"><img src="imagens/nw.png" alt="foto 3" data-titulo="#titulo-nowwhat"
                         data-conteudo="#conteudo-nowwhat"></a>
             </div>
             <div id="conteudoProjeto"></div>
+        </section>  -->
+        <section id="grid">
+            <!-- template para cada -->
+            <section id="ccdm" class="titulo-bloco">
+                <img src="imagens/ccdm.png" alt="foto 1" data-titulo="#titulo-ccdm" data-conteudo="#conteudo-ccdm">
+                <p>2024-2026</p>
+                <div id="ccdm_mouse">
+                    <img src="imagens/icons/1.svg">
+                    <div>
+                        <p class="subtitulo">Visual Identidy</p>
+                        <p class="titulo">
+                            Ciclo de Conversas<br>
+                            Design + Multimédia</p>
+                    </div>
+                    <div>
+                        <p>Identidy created for the 2024 edition of a design conference in Coimbra. Later used for the
+                            2026
+                            edition.</p>
+                        <p>Branding<br>Website<br>Graphic Design</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="typher" class="titulo-bloco">
+                <img src="imagens/typher.png" alt="foto 2" data-titulo="#titulo-typher"
+                    data-conteudo="#conteudo-typher">
+                <p>2026</p>
+                <div id="typher_mouse">
+                    <img src="imagens/icons/3.svg">
+                    <div>
+                        <p class="subtitulo">Editorial</p>
+                        <p class="titulo"> TypHer Magazine</p>
+                    </div>
+                    <div>
+                        <p>A celebration of women’s contribution to the evolution of graphic design.
+                        </p>
+                        <p>Typography<br>Editorial<br>Graphic Design</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="nw" class="titulo-bloco">
+                <img src="imagens/nw.png" alt="foto 3" data-titulo="#titulo-nowwhat" data-conteudo="#conteudo-nowwhat">
+                <p>2025</p>
+                <div id="nw_mouse">
+                    <img src="imagens/icons/4.svg">
+                    <div>
+                        <p class="subtitulo">Event, image department</p>
+                        <p class="titulo"> Now What? 25' </p>
+                    </div>
+                    <div>
+                        <p>Image of the event.
+                            Job fair organized by the Informatics Students’ Association (NEI/AAC).
+                        </p>
+                        <p>Typography<br>Branding<br>Graphic Design<br>Creative coding</p>
+                    </div>
+                </div>
+            </section>
+
+
         </section>
-
-        <!-- Templates de títulos -->
-        <template id="titulo-ccdm" class="titulo-bloco">
-            <img src="imagens/icons/1.svg">
-            <div>
-                <p  class="subtitulo">Visual Identidy</p>
-                <p class="titulo">
-                    Ciclo de Conversas<br>
-                    Design + Multimédia</p>
-            </div>
-        </template>
-       
-
-        <!-- Templates de conteúdos -->
-        <template id="conteudo-ccdm" class="grid">
-                <p>Identidy for the 2024 edition of a design conference.</p>
-                <p>Branding<br>Website<br>Graphic design</p>
-            <div>
-                <p>tools</p>
-                <ul>
-                    <li>HTML</li>
-                    <li>TCSS</li>
-                    <li>JavaScript</li>
-                    <li>Adobe Illustrator</li>
-                    <li>Adobe Photoshop</li>
-                </ul>
-            </div>
-        </template>
-        <!-- 2 -->
-        <template id="conteudo-refresko" class="grid">
-                <p>Identidy for a soda company.</p>
-                <p>Branding<br>Graphic design<br>Illustrations</p>
-            <div>
-                <p>tool</p>
-                <ul>
-                    <li>Adobe Illustrator</li>
-                    <li>Adobe Photoshop</li>
-                </ul>
-            </div>
-        </template>
 
     </main>
 

@@ -26,12 +26,67 @@ header {
     padding-bottom: clamp(50px, 4vw, 100px);
 }
 
-/* ========================================= imagens */
+/* ========================================= imagens iniciais tamanhos*/
+#ccdm img {
+    width: 25%;
+}
+#ccdm_mouse img {
+    width: 5%;
+}
+
+#typher img {
+    width: 25%;
+}
+#typher_mouse img {
+    width: 5%;
+}
+
+#nw img {
+    width: 25%;
+}
+#nw_mouse img {
+    width: 5%;
+}
 
 
-/* ========================================= Trabalhos */
+/* ========================================= grid */
 
-/* =================== Titulo */
+#grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 8px;
+}
+
+#ccdm {
+   grid-column: span 4 / span 5;
+   display: flex;
+   flex-wrap: wrap;
+}
+#ccdm p {
+    grid-column: span 5 / span 5;
+    grid-row-start: 2;
+}
+
+#typher {
+    grid-column: span 5 / span 5;
+    grid-row-start: 3;
+}
+#typher p {
+    grid-column: span 5 / span 5;
+    grid-row-start: 4;
+}
+
+#nw {
+    grid-column: span 5 / span 5;
+    grid-row-start: 5;
+}
+#nw p {
+    grid-column: span 5 / span 5;
+    grid-row-start: 6;
+}
+
+/* ===================  */
 
 
 
